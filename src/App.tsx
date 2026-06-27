@@ -1,11 +1,16 @@
+import Header from './Components/Header'
+import Sidenav from './Components/Sidenav'
+import Resumo from './Pages/Resumo'
 import './Style.css'
 
 function App() {
  
   return (
-    <>
-      <h1>Fintech</h1>
-    </>
+    <div>
+      <Sidenav />
+      <Header />
+      <Resumo />
+    </div>
   )
 }
 
