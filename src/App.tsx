@@ -1,17 +1,19 @@
-import Header from './Components/Header'
-import Sidenav from './Components/Sidenav'
-import Resumo from './Pages/Resumo'
-import './Style.css'
+import Header from "./Components/Header";
+import Sidenav from "./Components/Sidenav";
+import Resumo from "./Pages/Resumo";
+import { DataContextProvider } from "./Contexts/DataContext";
+import "./Style.css";
 
 function App() {
- 
   return (
-    <div>
+    <DataContextProvider>
       <Sidenav />
-      <Header />
-      <Resumo />
-    </div>
-  )
+      <main>
+        <Header />
+        <Resumo />
+      </main>
+    </DataContextProvider>
+  );
 }
 
-export default App
+export default App;
