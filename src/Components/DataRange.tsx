@@ -19,7 +19,6 @@ const DataRange = () => {
         value={inicio}
         onChange={(event) => setInicio(event.target.value)}
       />
-      {inicio}
       <DateInput
         label="Fim"
         id="fim"
@@ -27,7 +26,6 @@ const DataRange = () => {
         value={final}
         onChange={(event) => setFinal(event.target.value)}
       />
-      {final}
     </form>
   );
 };
