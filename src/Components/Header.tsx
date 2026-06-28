@@ -1,9 +1,12 @@
 import { useDataContext } from "../Contexts/DataContext";
+import DataRange from "./DataRange";
 
 const Header = () => {
-  const { data } = useDataContext();
-  console.log(data);
-  return <div>Header</div>;
+  return (
+    <div>
+      <DataRange />
+    </div>
+  );
 };
 
 export default Header;
