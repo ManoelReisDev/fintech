@@ -33,8 +33,6 @@
 
 ## Testes
 
-A suíte foi montada com [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) e [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
-
 Os testes cobrem os componentes que têm comportamento relevante:
 
 - [`src/Components/Loading.test.tsx`](src/Components/Loading.test.tsx)
@@ -46,16 +44,6 @@ Os testes cobrem os componentes que têm comportamento relevante:
 - [`src/Components/Sidenav.test.tsx`](src/Components/Sidenav.test.tsx)
 - [`src/Components/Header.test.tsx`](src/Components/Header.test.tsx)
 - [`src/Components/GraficoVendas.test.tsx`](src/Components/GraficoVendas.test.tsx)
-
-Eles validam:
-
-- estados iniciais e renderização principal
-- interação com clique e input
-- comportamento condicional
-- agregação e transformação de dados no gráfico
-- integração com router e contexto
-
----
 
 ## Como Rodar
 
