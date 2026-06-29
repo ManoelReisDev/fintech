@@ -92,7 +92,7 @@ Este projeto está sob a licença MIT.
 
 **Autor:** ManoelReisDev
 
-**Repositório:** [fintech](./)
+**Repositório:** [fintech](https://github.com/ManoelReisDev/fintech/)
 
 ---
 
