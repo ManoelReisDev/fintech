@@ -10,7 +10,7 @@ const style: CSSProperties = {
 };
 
 const Loading = () => {
-  return <div style={style} />;
+  return <div style={style} role="status" aria-label="Carregando" />;
 };
 
 export default Loading;

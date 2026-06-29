@@ -29,6 +29,68 @@
 | CSS Custom Properties | Tokens visuais e consistência de estilo |
 | Media Queries | Adaptação da interface para telas menores |
 
+---
+
+## Testes
+
+A suíte foi montada com [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) e [`@testing-library/jest-dom`](https://github.com/testing-library/jest-dom).
+
+Os testes cobrem os componentes que têm comportamento relevante:
+
+- [`src/Components/Loading.test.tsx`](src/Components/Loading.test.tsx)
+- [`src/Components/DateInput.test.tsx`](src/Components/DateInput.test.tsx)
+- [`src/Components/MesBtn.test.tsx`](src/Components/MesBtn.test.tsx)
+- [`src/Components/Meses.test.tsx`](src/Components/Meses.test.tsx)
+- [`src/Components/DataRange.test.tsx`](src/Components/DataRange.test.tsx)
+- [`src/Components/VendaItem.test.tsx`](src/Components/VendaItem.test.tsx)
+- [`src/Components/Sidenav.test.tsx`](src/Components/Sidenav.test.tsx)
+- [`src/Components/Header.test.tsx`](src/Components/Header.test.tsx)
+- [`src/Components/GraficoVendas.test.tsx`](src/Components/GraficoVendas.test.tsx)
+
+Eles validam:
+
+- estados iniciais e renderização principal
+- interação com clique e input
+- comportamento condicional
+- agregação e transformação de dados no gráfico
+- integração com router e contexto
+
+---
+
+## Como Rodar
+
+### Desenvolvimento
+
+```bash
+npm install
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Testes
+
+```bash
+npm run test
+```
+
+Para executar a suíte uma única vez:
+
+```bash
+npm run test:run
+```
+
+### Preview da build
+
+```bash
+npm run preview
+```
+
+---
 
 ## Funcionalidades
 
