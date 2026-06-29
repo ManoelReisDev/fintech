@@ -1,5 +1,6 @@
 import { useDataContext } from "../Contexts/DataContext";
 import Loading from "../Components/Loading";
+import GraficoVendas from "../Components/GraficoVendas";
 
 const Resumo = () => {
   const { data } = useDataContext();
@@ -37,7 +38,9 @@ const Resumo = () => {
           </span>
         </div>
       </div>
-      <div className="box graficos mb">Graficos</div>
+      <div className="box graficos mb">
+        <GraficoVendas data={data} />
+      </div>
     </section>
   );
 };
