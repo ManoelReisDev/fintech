@@ -1,4 +1,4 @@
-import type { IVenda } from "../Contexts/DataContext";
+import type { IVenda } from "../Types/Venda";
 import { NavLink } from "react-router-dom";
 
 const VendaItem = ({ venda }: { venda: IVenda }) => {

@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../Hooks/useFetch";
-import type { IVenda } from "../Contexts/DataContext";
+import type { IVenda } from "../Types/Venda";
 import Loading from "../Components/Loading";
 
 interface IVendaSemData extends Omit<IVenda, "data"> {}

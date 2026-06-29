@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import useFetch from "../Hooks/useFetch";
 import formatDate from "../Utils/formatDate";
+import type { IVenda } from "../Types/Venda";
 
 interface IDataContextType {
   data: IVenda[] | null;
@@ -10,16 +11,6 @@ interface IDataContextType {
   final: string;
   setInicio: React.Dispatch<React.SetStateAction<string>>;
   setFinal: React.Dispatch<React.SetStateAction<string>>;
-}
-
-export interface IVenda {
-  id: string;
-  nome: string;
-  preco: number;
-  status: "pago" | "processando" | "falha";
-  pagamento: "boleto" | "cartao" | "pix";
-  data: string;
-  parcelas: number | null;
 }
 
 const DataContext = createContext<IDataContextType | undefined>(undefined);
