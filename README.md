@@ -12,7 +12,7 @@
 
 ## Preview do Projeto
 
-> Adicione aqui uma captura de tela da interface, se quiser manter o mesmo padrão visual do exemplo.
+<img width="954" height="829" alt="image" src="https://github.com/user-attachments/assets/ad2a6635-40f5-4ffd-8967-f8d26cc99ee3" />
 
 ---
 
