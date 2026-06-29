@@ -4,19 +4,26 @@ import Resumo from "./Pages/Resumo";
 import { DataContextProvider } from "./Contexts/DataContext";
 import "./Style.css";
 import Vendas from "./Pages/Vendas";
+import Venda from "./Pages/Venda";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <DataContextProvider>
-      <div className="container">
-        <Sidenav />
-        <main>
-          <Header />
-          <Resumo />
-          <Vendas />
-        </main>
-      </div>
-    </DataContextProvider>
+    <BrowserRouter>
+      <DataContextProvider>
+        <div className="container">
+          <Sidenav />
+          <main>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Resumo />} />
+              <Route path="/vendas" element={<Vendas />} />
+              <Route path="/vendas/:id" element={<Venda />} />
+            </Routes>
+          </main>
+        </div>
+      </DataContextProvider>
+    </BrowserRouter>
   );
 }
 

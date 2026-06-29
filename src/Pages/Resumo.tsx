@@ -1,10 +1,11 @@
 import { useDataContext } from "../Contexts/DataContext";
+import Loading from "../Components/Loading";
 
 const Resumo = () => {
   const { data } = useDataContext();
 
   if (!data) {
-    return <section>Carregando...</section>;
+    return <section><Loading /></section>;
   }
   return (
     <section>
